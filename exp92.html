@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .header-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            /* Creates columns that are at least 250px wide and distributes available space equally */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px; /* Space between the cards */
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-icon {
+            color: #007bff;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .product-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-weight: bold;
+            color: #333;
+            font-size: 16px;
+        }
+
+        /* The user-specified media query for tablet size */
+        @media (max-width: 1024px) {
+           .grid-container {
+               /* Ensures minmax works effectively within the smaller viewport */
+               grid-template-columns: repeat(auto-fit, minmax(calc(50% - 20px), 1fr));
+           }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                /* On smaller phones, force a single column layout */
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="header-title">Responsive Product Grid</h2>
+
+    <div class="grid-container">
+
+        <!-- Product 1 Card -->
+        <div class="product-card">
+            <p class="product-icon">🔎 Product 1</p>
+            <h4 class="product-title">Product 1</h4>
+            <p class="product-description">High-quality item with great features.</p>
+            <p class="product-price">$499</p>
+        </div>
+
+        <!-- Product 2 Card -->
+        <div class="product-card">
+             <p class="product-icon">🔎 Product 2</p>
+            <h4 class="product-title">Product 2</h4>
+            <p class="product-description">Durable and stylish for daily use.</p>
+            <p class="product-price">$799</p>
+        </div>
+
+        <!-- Product 3 Card -->
+        <div class="product-card">
+             <p class="product-icon">🔎 Product 3</p>
+            <h4 class="product-title">Product 3</h4>
+            <p class="product-description">Lightweight and comfortable.</p>
+            <p class="product-price">$1,299</p>
+        </div>
+
+        <!-- Product 4 Card -->
+        <div class="product-card">
+             <p class="product-icon">🔎 Product 4</p>
+            <h4 class="product-title">Product 4</h4>
+            <p class="product-description">Trendy design with premium quality.</p>
+            <p class="product-price">$999</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
