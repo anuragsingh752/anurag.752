@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Product Grid</title>
-</head>
-<body style="margin:0; font-family:Arial, sans-serif; background:#f5f5f5;">
+<body style="font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4;">
 
-<div style="border:2px solid #000; padding:30px; margin:20px; background:#fff;">
+<h1 style="text-align:center; margin-top:40px;">Responsive Product Grid</h1>
 
-    <h2 style="text-align:center; margin-bottom:40px;">Responsive Product Grid</h2>
+<div style="
+    max-width:1500px;
+    margin:30px auto;
+    padding:20px;
+    background:white;
+    border:3px solid black;
+">
 
-    <!-- Grid Container -->
-    <div style="display:flex; justify-content:space-between; gap:20px; flex-wrap:nowrap;">
+    <!-- FIXED 4 COLUMN GRID -->
+    <div style="
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap:20px;
+        padding:20px;
+    ">
 
         <!-- Product 1 -->
-        <div style="flex:1; background:#fff; padding:20px; border-radius:8px;
-                    box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
-            <img src="./tshirt.png"
-                 style="width:100%; height:120px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
-            <h3>Product 1</h3>
-            <p style="color:#555;">High-quality item with great features.</p>
-            <strong>₹499</strong>
+        <div style="
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            text-align:center;
+        ">
+            <img src="tshirt.png" style="width:100%; border-radius:8px;">
+            <h3 style="margin-top:15px;">Product 1</h3>
+            <p>High-quality item with great features.</p>
+            <p style="font-weight:bold;">₹499</p>
         </div>
 
         <!-- Product 2 -->
-        <div style="flex:1; background:#fff; padding:20px; border-radius:8px;
-                    box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
-            <img src="./tshirt.png"
-                 style="width:100%; height:120px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
-            <h3>Product 2</h3>
-            <p style="color:#555;">Durable and stylish for daily use.</p>
-            <strong>₹799</strong>
+        <div style="
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            text-align:center;
+        ">
+            <img src="tshirt.png" style="width:100%; border-radius:8px;">
+            <h3 style="margin-top:15px;">Product 2</h3>
+            <p>Durable and stylish for daily use.</p>
+            <p style="font-weight:bold;">₹799</p>
         </div>
 
         <!-- Product 3 -->
-        <div style="flex:1; background:#fff; padding:20px; border-radius:8px;
-                    box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
-            <img src="./tshirt.png"
-                 style="width:100%; height:120px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
-            <h3>Product 3</h3>
-            <p style="color:#555;">Lightweight and comfortable.</p>
-            <strong>₹1,299</strong>
+        <div style="
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            text-align:center;
+        ">
+            <img src="tshirt.png" style="width:100%; border-radius:8px;">
+            <h3 style="margin-top:15px;">Product 3</h3>
+            <p>Lightweight and comfortable.</p>
+            <p style="font-weight:bold;">₹1,299</p>
         </div>
 
         <!-- Product 4 -->
-        <div style="flex:1; background:#fff; padding:20px; border-radius:8px;
-                    box-shadow:0 4px 6px rgba(0,0,0,0.1); text-align:center;">
-            <img src="./tshirt.png"
-                 style="width:100%; height:120px; object-fit:cover; border-radius:6px; margin-bottom:10px;">
-            <h3>Product 4</h3>
-            <p style="color:#555;">Trendy design with premium quality.</p>
-            <strong>₹999</strong>
+        <div style="
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            text-align:center;
+        ">
+            <img src="tshirt.png" style="width:100%; border-radius:8px;">
+            <h3 style="margin-top:15px;">Product 4</h3>
+            <p>Trendy design with premium quality.</p>
+            <p style="font-weight:bold;">₹999</p>
         </div>
 
     </div>
 </div>
 
+<!-- Footer -->
+<p style="text-align:center; margin-top:20px;">
+    Anurag Singh<br>
+    CSE-14<br>
+    2025B0110752
+</p>
+
 </body>
 </html>
-<div style="text-align:center; margin-bottom: 10px;">
-<h>Anurag Singh</h><br>
-  <h>CSE -14</h><br>
-  <h>2025B0110752
-</h>
-</div>
